@@ -1,41 +1,21 @@
 header {
-    height: 80%;
-    width: 80%;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: hover;
-    top: 0;
-   
+ height: 320px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 10px 10px 40px;
+  background-image: url(img/banner.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  nav ul {
-    display: flex;           /* Torna a lista horizontal */
-    justify-content: center; /* Centraliza os itens no nav */
-    list-style: none;        /* Remove os marcadores da lista */
-    margin: 0;
-    padding: 0;
-    position: float;
-  }
+nav ul {
 
-  nav li {
-    margin: 0 20px;          /* Espaço entre os itens */
-  }
+display: flex;
+justify-content: center;
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    transition: background 0.3s;
-  }
-
-  nav a:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
-
-
-
+}
+nav li {
+list-style: none; 
+margin: 0 10px; 
+}
