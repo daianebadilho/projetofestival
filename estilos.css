@@ -3,16 +3,29 @@ background-color:
 
 }
 header {
-height: 320px;
+height: 150px;
 position: relative;
 background-image: url(img/banner.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 box-shadow: 10px 10px 40px;
-
 }
 
+#titulofestival {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulofestival h1 {
+  color: rgb(250, 241, 241);
+  font-size: 48px;
+  margin: 0;
+  padding-top: 40px;
+  text-shadow: 4px 4px 8px black;
+}
 nav ul {
 display: flex;
 justify-content: center;
