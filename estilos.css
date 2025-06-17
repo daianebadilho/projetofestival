@@ -1,11 +1,19 @@
 body {
-background-color: black
+background-color: rgb(101, 184, 159)
 
 }
 header {
 height: 150px;
 position: relative;
- 
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: #0f0f0f;
+box-shadow: 
+      1px 1px 0 #ff00cc,
+      2px 2px 0 #ff0099,
+      3px 3px 0 #cc00ff,
+      4px 4px 0 #9900ff,
+      5px 5px 10px rgba(0,0,0,0.5); 
 }
 
 #titulofestival {
@@ -99,6 +107,7 @@ nav li {
 
 .slideshow-container {
   position: relative;
+  margin: px;
   width: 100%;
   height: 400px;
   overflow: hidden;
