@@ -1,5 +1,5 @@
 body {
-background-color: #ffd700;
+background-color: #575547;
 
 }
 header {
@@ -97,7 +97,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #44193b79;
-  color: rgb(241, 236, 236);
+  color: #ffd700;
   border-radius: 5px;
 }
 
