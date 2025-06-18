@@ -1,39 +1,28 @@
 body {
-background-color: rgb(101, 184, 159)
+background-color: #ffd700;
 
 }
 header {
-height: 150px;
-position: relative;
-margin-top: 10px;
-margin-bottom: 10px;
-background-color: #0f0f0f;
-box-shadow: 
-      1px 1px 0 #ff00cc,
-      2px 2px 0 #ff0099,
-      3px 3px 0 #cc00ff,
-      4px 4px 0 #9900ff,
-      5px 5px 10px rgba(0,0,0,0.5); 
+display: flex;
+align-items: center;
+padding: 20px 40px;
+height: 5px;
+background-color: black;
 }
 
 #titulofestival {
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  margin-right: 40px;
+  white-space: nowrap;
 }
 
 
 #titulofestival h1 {
-  height: calc(100%-38px);
-  margin-top: 38px;
-  display: flex;
   font-family: 'Shrikhand', cursive;
-  font-size: 3.5em;
+  font-size: 15px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  text-align: center;
-  align-items:center;
 
   color: #ff66cc;
   text-shadow:
@@ -71,30 +60,18 @@ box-shadow:
 
 
 nav {
-  display: flex;
-  justify-content: center;   
-  align-items: center;      
+  flex: 1;  
   width: 100%;
-  height: 38px;
-  background-color: #ffd700;
-  position: absolute;
   top: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
-  box-shadow: 
-      1px 1px 0 #ff00cc,
-      2px 2px 0 #ff0099,
-      3px 3px 0 #cc00ff,
-      4px 4px 0 #9900ff,
-      5px 5px 10px rgba(0,0,0,0.5);
   padding: 0; 
   margin: 0; 
-position: relative;
 }
 
 nav ul {
   display: flex;
-  gap: 20px;       
+  justify-content: space-between;    
   padding: 0;     
   margin: 0;       
   list-style: none; 
@@ -104,20 +81,31 @@ nav li {
   text-align: center;  
 }
 
+nav ul li {
+flex: 1;
+text-align: center;  
+}
+
+nav ul li a {
+  display: inline-block;
+  width: 100%; /* ocupa toda a largura do item */
+  color: #ff0099;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #44193b79;
+  color: rgb(241, 236, 236);
+  border-radius: 5px;
+}
 
 .slideshow-container {
   position: relative;
-  margin: px;
   width: 100%;
-  height: 400px;
+  height: 250px;
   overflow: hidden;
-  box-shadow: 
-    1px 1px 0 #ff00cc,
-    2px 2px 0 #ff0099,
-    3px 3px 0 #cc00ff,
-    4px 4px 0 #9900ff,
-    5px 5px 10px rgba(0,0,0,0.5);
-  
   
 }
 
