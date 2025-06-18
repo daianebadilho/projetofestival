@@ -10,7 +10,7 @@ height: 5px;
 background-color: black;
 }
 
-#titulofestival {
+.titulofestival {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
@@ -18,7 +18,7 @@ background-color: black;
 }
 
 
-#titulofestival h1 {
+.titulofestival h1 {
   font-family: 'Audiowide', cursive;
   font-style: normal;
   font-size: 15px;
@@ -102,7 +102,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-.slideshow-container {
+#slideshow-container {
   position: relative;
   width: 100%;
   height: 250px;
@@ -110,7 +110,7 @@ nav ul li a:hover {
 
 }
 
-.slides {
+#slides {
   display: flex;
   width: 100%;
   height: 100%;
