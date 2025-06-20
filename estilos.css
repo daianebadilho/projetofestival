@@ -114,7 +114,7 @@ nav ul li a:hover {
   display: flex;
   width: 100%;
   height: 100%;
-  animation: slideAnimation 180s infinite;
+  animation: slideAnimation 30s infinite;
 }
 
 .slide {
