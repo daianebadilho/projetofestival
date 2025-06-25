@@ -161,6 +161,34 @@ nav ul li a:hover {
   100% { transform: translateX(0%); }
 }
 
+.ingressos {
+  text-align: center;             
+  color: #e0f7ff;
+  font-family: 'Audiowide';
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #0f1c2e;
+
+}
+
+
+.sold-out {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 12px;
+  color:  #e0f7ff;
+  background-color: #0f1c2e;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  border: 3px solid #e0f7ff;
+  transform: rotate(-5deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+}
+
 .corpodotexto {
   background-color: #0f1c2e;
   width: 100%;
@@ -172,7 +200,7 @@ nav ul li a:hover {
 }
 
 .quadrolineup,
-.datas {
+.datas, .ingressos {
   flex: 1;                          
   display: flex;
   flex-direction: column;           
@@ -185,7 +213,7 @@ nav ul li a:hover {
   background-color: #0f1c2e;
 }
 
-.datas, .quadrolineup p {
+.datas, .quadrolineup, .ingressos p {
   text-align: center;
 
 } 
@@ -233,6 +261,10 @@ line-height: 2px;
       4px 4px 0 #8a2be2,
       5px 5px 15px rgba(200,255,255,0.8);
   }
+
+}
+
+.textocorpo {
 
 }
 
