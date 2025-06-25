@@ -1,5 +1,5 @@
 body {
-background-color: #575547;
+background-color: #0f1c2e;
 
 }
 header {
@@ -7,7 +7,7 @@ display: flex;
 align-items: center;
 padding: 20px 40px;
 height: 5px;
-background-color: black;
+
 }
 
 .titulofestival {
@@ -17,7 +17,6 @@ background-color: black;
   white-space: nowrap;
 }
 
-
 .titulofestival h1 {
   font-family: 'Audiowide', cursive;
   font-style: normal;
@@ -25,15 +24,15 @@ background-color: black;
   letter-spacing: 5px;
   text-transform: uppercase;
 
-  color: #ff66cc;
+  color: #00ffff;
   text-shadow:
-    1px 1px 0 #ff00cc,
-    2px 2px 0 #ff0099,
-    3px 3px 0 #cc00ff,
-    4px 4px 0 #9900ff,
-    5px 5px 10px rgba(0,0,0,0.5);
+    1px 1px 0 #00ccff,
+    2px 2px 0 #0099ff,
+    3px 3px 0 #0077cc,
+    4px 4px 0 #0055aa,
+    5px 5px 10px rgba(0,0,50,0.5);
 
-  background: linear-gradient(45deg, #ff0080, #ff8c00, #40e0d0);
+  background: linear-gradient(45deg, #00ffff, #00bfff, #7f00ff, #00ffcc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: brilho-pop 3s infinite alternate;
@@ -42,19 +41,19 @@ background-color: black;
 @keyframes brilho-pop {
   0% {
     text-shadow:
-      1px 1px 0 #ff00cc,
-      2px 2px 0 #ff0099,
-      3px 3px 0 #cc00ff,
-      4px 4px 0 #9900ff,
-      5px 5px 10px rgba(0,0,0,0.5);
+      1px 1px 0 #00ccff,
+      2px 2px 0 #0099ff,
+      3px 3px 0 #0077cc,
+      4px 4px 0 #0055aa,
+      5px 5px 10px rgba(0,0,50,0.5);
   }
   100% {
     text-shadow:
-      1px 1px 0 #ffd700,
-      2px 2px 0 #ff1493,
-      3px 3px 0 #00ffff,
-      4px 4px 0 #ff00ff,
-      5px 5px 15px rgba(255,255,255,0.8);
+      1px 1px 0 #00ffff,
+      2px 2px 0 #00ffcc,
+      3px 3px 0 #7f00ff,
+      4px 4px 0 #8a2be2,
+      5px 5px 15px rgba(200,255,255,0.8);
   }
 }
 
@@ -90,15 +89,17 @@ text-align: center;
 nav ul li a {
   display: inline-block;
   width: 100%; 
-  color: #ff0099;
+  color: #e0f7ff;
+  text-shadow: 1px 1px 0 #3399ff;
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
+  
 }
 
 nav ul li a:hover {
   background-color: #44193b79;
-  color: #ffd700;
+  color: ;
   border-radius: 5px;
 }
 
@@ -120,6 +121,7 @@ nav ul li a:hover {
 .slide {
   width: 100%;
   flex-shrink: 0;
+  position: relative;
 }
 
 .slide img {
@@ -128,38 +130,61 @@ nav ul li a:hover {
   object-fit: cover;
 }
 
+.texto-slide {
+ position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e0f7ff;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 2px 0 #3399ff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Audiowide';
+  font-style: normal;
+  letter-spacing: 5px;
+  text-transform:uppercase;
+  margin: 0;
+  line-height: 1;
+  
+
+
+}
+
 @keyframes slideAnimation {
   0% { transform: translateX(0%); }
-  33.33% { transform: translateX(-100%); }
-  66.66% { transform: translateX(-200%); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
   100% { transform: translateX(0%); }
 }
 
 .corpodotexto {
-background-color: black;
-display: flex;
-gap: 20px;
-padding: 20px;
-
+  background-color: #0f1c2e;
+  width: 100%;
+  display: flex;         
+  gap: 20px;              
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 
-.quadrolineup {
-flex:1;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-background-color; black;
-text-align: justify;
-    
+.quadrolineup,
+.datas {
+  flex: 1;                          
+  display: flex;
+  flex-direction: column;           
+  justify-content: flex-start;
+  text-align: justify;             
+  color: #e0f7ff;
+  font-family: 'Audiowide';
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #0f1c2e;
 }
 
-.datas{
-flex:1;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-background-color; black;
-text-align: justify;
 
 .headliners {
 
@@ -170,7 +195,7 @@ text-align: justify;
   text-transform:uppercase;
   margin: 0;
   line-height: 1;
-  color: #ffd700;
+  
 }
 
 .outrosartistas {
@@ -182,7 +207,6 @@ letter-spacing: 2px;
 text-transform: uppercase;
 margin: 0;
 line-height: 1;
-color: #ffd700;
 }
 
 
