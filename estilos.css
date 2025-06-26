@@ -1,5 +1,12 @@
 body {
 background-color: #0f1c2e;
+width: 100%;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+scroll-behavior: smooth;
+
 
 }
 header {
@@ -7,9 +14,17 @@ display: flex;
 align-items: center;
 padding: 20px 40px;
 height: 5px;
+overflow: hidden;
+position: fixed;
+top: 0;
+left: 0;
 width: 100%;
+background-color: #0f1c2e; 
+z-index: 1000; 
 
 }
+
+
 
 .titulofestival {
   display: flex;
@@ -63,11 +78,11 @@ width: 100%;
 nav {
   flex: 1;  
   width: 100%;
-  top: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
   padding: 0; 
   margin: 0; 
+
 }
 
 nav ul {
@@ -76,6 +91,7 @@ nav ul {
   padding: 0;     
   margin: 0;       
   list-style: none; 
+  width: 100%;
 }
 
 nav li {
@@ -106,15 +122,15 @@ nav ul li a:hover {
 
 #slideshow-container {
   position: relative;
-
+  width: 100%;
   height: 300px;
   overflow: hidden;
-
+  margin-top: 50px;
 }
 
 #slides {
   display: flex;
-  
+  width: 100%;
   height: 100%;
   animation: slideAnimation 30s infinite;
 }
@@ -162,7 +178,7 @@ nav ul li a:hover {
   100% { transform: translateX(0%); }
 }
 
-.ingressos {
+.ingressos{
   text-align: center;             
   color: #e0f7ff;
   font-family: 'Audiowide';
@@ -172,7 +188,17 @@ nav ul li a:hover {
 
 }
 
-
+.noticias {
+  text-align: center;             
+  font-family: 'Audiowide';
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #0f1c2e;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #e0f7ff;
+text-shadow: 1px 1px 0 #3399ff;
+width: 100%;
+}
 .sold-out {
   display: inline-block;
   margin-left: 10px;
@@ -214,7 +240,7 @@ nav ul li a:hover {
   background-color: #0f1c2e;
 }
 
-.datas, .quadrolineup, .ingressos p {
+.datas, .quadrolineup, .ingressos p, .noticias p {
   text-align: center;
 
 } 
@@ -265,9 +291,6 @@ line-height: 2px;
 
 }
 
-.textocorpo {
-
-}
 
 .headliners {
 
@@ -292,4 +315,11 @@ margin: 0;
 line-height: 1;
 }
 
+.video {
+  width: 100%;
+  display: flex;         
+  gap: 20px;              
+  padding: 20px;
+  justify-content:center;  
+}
 
