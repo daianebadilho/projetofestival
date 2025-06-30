@@ -360,5 +360,73 @@ text-align: justify;
 font-size: 18px;  
 }
 
+table {
+border: 1px solid #e0f7ff;
+border-collapse: collapse;
+text-align: center;
+}
 
+th, td {
+border: 1px solid #e0f7ff;
 
+}
+
+.mapa-evento {
+  width: 1000px;
+  height: 700px;
+  margin: 30px auto;
+  position: relative;
+  background-color:#e0f7ff;
+  border: 2px solid #000;
+    }
+
+.palco {
+position: absolute;
+top: 20px;
+width: 200px;
+height: 80px;
+background-color: #0f1c2e;
+color:#e0f7ff;
+text-align: center;
+line-height: 80px;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: normal;
+font-size: 15px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.palco1 { left: 180px; }
+.palco2 { right: 180px; }
+
+.pista-premium {
+position: absolute;
+top: 100px;
+left: 50px;
+width: 890px;
+height: 200px;
+background-color: #7f00ff;
+color:#e0f7ff;
+text-align: center;
+line-height: 200px;
+font-weight: bold;
+opacity: 0.9;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pista {
+position: absolute;
+top: 302px;
+left: 50px;
+width: 890px;
+height: 370px;
+background-color: #00ccff;
+text-align: center;
+line-height: 350px;
+font-weight: bold;
+opacity: 0.9;
+color:#0f1c2e;;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 
