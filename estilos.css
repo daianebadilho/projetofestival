@@ -6,9 +6,10 @@ padding: 0;
 overflow-x: hidden;
 box-sizing: border-box;
 scroll-behavior: smooth;
-
+margin-top: 50px;
 
 }
+
 header {
 display: flex;
 align-items: center;
@@ -22,7 +23,7 @@ width: 100%;
 background-color: #0f1c2e; 
 z-index: 1000; 
 
-}
+align-items: ;}
 
 
 
@@ -177,6 +178,28 @@ nav ul li a:hover {
   75% { transform: translateX(-300%); }
   100% { transform: translateX(0%); }
 }
+.fraseefeito {
+text-align: center;             
+color: #e0f7ff;
+text-shadow: 1px 1px 0 #3399ff;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 12px;
+padding: 0; 
+margin: 0;
+letter-spacing: 3px;
+line-height: 7px;
+ 
+}
+
+.destaque {
+  font-family: 'Audiowide'; 
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 5px;
+  text-transform:uppercase;
+  line-height: 1; 
+}
 
 .ingressos{
   text-align: center;             
@@ -189,15 +212,14 @@ nav ul li a:hover {
 }
 
 .noticias {
-  text-align: center;             
-  font-family: 'Audiowide';
+  text-align: center;
   padding: 10px;
   box-sizing: border-box;
   background-color: #0f1c2e;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #e0f7ff;
-text-shadow: 1px 1px 0 #3399ff;
-width: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #e0f7ff;
+  text-shadow: 1px 1px 0 #3399ff;
+  width: 100%;
 }
 .sold-out {
   display: inline-block;
@@ -300,7 +322,7 @@ line-height: 2px;
   letter-spacing: 5px;
   text-transform:uppercase;
   margin: 0;
-  line-height: 1;
+  line-height: 1px;
   
 }
 
@@ -322,4 +344,21 @@ line-height: 1;
   padding: 20px;
   justify-content:center;  
 }
+
+.sobre, .pageingressos {
+background-color: #0f1c2e;
+width: 100%;                  
+box-sizing: border-box; 
+padding: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #e0f7ff;
+text-shadow: 1px 1px 0 #3399ff;                         
+display: flex;
+flex-direction: column;           
+justify-content: flex-start;
+text-align: justify;             
+font-size: 18px;  
+}
+
+
 
