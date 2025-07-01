@@ -259,7 +259,6 @@ line-height: 7px;
   font-family: 'Audiowide';
   padding: 10px;
   box-sizing: border-box;
-  background-color: #0f1c2e;
 }
 
 .datas, .quadrolineup, .ingressos p, .noticias p {
@@ -346,7 +345,7 @@ line-height: 1;
 }
 
 .sobre, .pageingressos {
-background-color: #0f1c2e;
+
 width: 100%;                  
 box-sizing: border-box; 
 padding: 30px;
@@ -361,20 +360,14 @@ font-size: 18px;
 }
 
 table {
-border: 1px solid #e0f7ff;
-border-collapse: collapse;
 text-align: center;
 }
 
-th, td {
-border: 1px solid #e0f7ff;
-
-}
 
 .mapa-evento {
   width: 1000px;
   height: 700px;
-  margin: 30px auto;
+  margin: 50px auto;
   position: relative;
   background-color:#e0f7ff;
   border: 2px solid #000;
@@ -426,7 +419,40 @@ text-align: center;
 line-height: 350px;
 font-weight: bold;
 opacity: 0.9;
-color:#0f1c2e;;
+color:#0f1c2e;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
  
+.fundoartistaslineup {
+top: 5px;
+padding: 30px;
+left: 40px;
+width: 800px;
+height: 280px;
+margin: 30px auto;
+position: relative;
+background-color:  rgba(0, 0, 0, 0.35);
+}
+
+.fundolineup {
+top: 30px;
+padding: 30px;
+left: 40px;
+width: 800px;
+height: 500px;
+margin: 30px auto;
+position: relative;
+background-color:  rgba(0, 0, 0, 0.35);
+color: #e0f7ff;
+}
+
+.fundoingressos {
+top: 5px;
+padding: 30px;
+left: 40px;
+width: 800px;
+height: 230px;
+margin: 20px auto;
+position: relative;
+background-color:  rgba(0, 0, 0, 0.35);
+}
