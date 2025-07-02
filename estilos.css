@@ -191,7 +191,7 @@ nav ul li a:hover {
 .fraseefeito {
   text-align: center;
   color: #e0f7ff;
-  text-shadow: 0 2px 5px rgba(51, 153, 255, 0.7); /* sombra azul suave */
+  text-shadow: 0 2px 5px rgba(51, 153, 255, 0.7); 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 15px;       
   padding: 20px 10px;
@@ -716,7 +716,7 @@ background-color:  rgba(0, 0, 0, 0.35);
   box-sizing: border-box;
 }
 .barra-lateral {
-  width: 350px; /* maior largura */
+  width: 350px; 
   background-color: rgba(0, 0, 0, 0.35);
   padding: 30px 20px;
   color: #e0f7ff;
@@ -725,10 +725,10 @@ background-color:  rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   box-sizing: border-box;
 
-  /* Espaços para não encostar */
+ 
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 40px; /* Afastar da lateral esquerda da página */
+  margin-left: 40px; 
 }
 
 
