@@ -8,7 +8,7 @@ box-sizing: border-box;
 scroll-behavior: smooth;
 
 main {
-padding-top: 15px;  
+padding-top: 10px;  
 }
 
 }
@@ -179,27 +179,24 @@ nav ul li a:hover {
   75% { transform: translateX(-300%); }
   100% { transform: translateX(0%); }
 }
+
 .fraseefeito {
-text-align: center;             
-color: #e0f7ff;
-text-shadow: 1px 1px 0 #3399ff;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 12px;
-padding: 0; 
-margin: 0;
-letter-spacing: 3px;
-line-height: 7px;
- 
+  text-align: center;
+  color: #e0f7ff;
+  text-shadow: 0 2px 5px rgba(51, 153, 255, 0.7); /* sombra azul suave */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;       
+  padding: 20px 10px;
+  margin: 20px auto;
+  letter-spacing: 4px;
+  line-height: 1.3;
 }
 
-.destaque {
-  font-family: 'Audiowide'; 
-  font-size: 25px;
-  font-weight: bold;
-  font-style: normal;
-  letter-spacing: 5px;
-  text-transform:uppercase;
-  line-height: 1; 
+.fraseefeito .destaque {
+   font-family: 'Audiowide', cursive;
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
+  letter-spacing: 6px;
 }
 
 .ingressos{
@@ -337,8 +334,7 @@ text-align: justify;
 }
 
 .video {
-  width: 100%;
-  display: flex;         
+  width: 100%;       
   gap: 20px;              
   padding: 20px;
   justify-content:center;  
@@ -451,7 +447,7 @@ top: 5px;
 padding: 30px;
 left: 40px;
 width: 1000px;
-height: 250px;
+height: 300px;
 margin: 30px auto;
 position: center;
 background-color:  rgba(0, 0, 0, 0.35);
@@ -474,11 +470,33 @@ background-color:  rgba(0, 0, 0, 0.35);
     padding: 30px;
     left: 40px;
     width: 800px;
-    height: 300px;
+    height: 250px;
     margin: 30px auto;
     position: relative;
     background-color:  rgba(0, 0, 0, 0.35);
 
+  }
+
+  .fundonoticias {
+    top: 5px;
+    padding: 30px;
+    left: 40px;
+    width: 800px;
+    height: 900px;
+    margin: 30px auto;
+    position: relative;
+    background-color:  rgba(0, 0, 0, 0.35);
+
+  }
+
+  .fundosobre {
+  padding: 30px;
+  left: 40px;
+  width: 1000px;
+  height: 500px;
+  margin: 30px auto;
+  position: center;
+  background-color:  rgba(0, 0, 0, 0.35);
   }
 
 .botaocompreseuingresso {
@@ -493,6 +511,7 @@ background-color:  rgba(0, 0, 0, 0.35);
   color: #fff;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
 }
 
 .botaocompreseuingresso:hover {
@@ -504,3 +523,177 @@ background-color:  rgba(0, 0, 0, 0.35);
   text-align: center;
   margin: 30px 0;  
   }
+
+  .seletor-ingressos {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Audiowide';
+  color: #e0f7ff;
+  font-size: 16px;
+}
+
+.seletor-ingressos label {
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-shadow: 1px 1px 0 #3399ff;
+}
+
+.seletor-ingressos select {
+  padding: 10px 20px;
+  font-family: 'Audiowide';
+  font-size: 14px;
+  border-radius: 8px;
+  border: 2px solid #00ffff;
+  background-color: #0f1c2e;
+  color: #e0f7ff;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.seletor-ingressos select:hover {
+  border-color: #7f00ff;
+  background-color: #1a2a44;
+}
+
+.forma-pagamento {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Audiowide';
+  color: #e0f7ff;
+  font-size: 16px;
+}
+
+.forma-pagamento label {
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-shadow: 1px 1px 0 #3399ff;
+}
+
+.forma-pagamento select {
+  padding: 10px 20px;
+  font-family: 'Audiowide';
+  font-size: 14px;
+  border-radius: 8px;
+  border: 2px solid #00ffff;
+  background-color: #0f1c2e;
+  color: #e0f7ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forma-pagamento select:hover {
+  border-color: #7f00ff;
+  background-color: #1a2a44;
+}
+
+.fundoinscricao {
+  width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #e0f7ff;
+  font-family: 'Audiowide';
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.formulario-inscricao {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-inscricao label {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-shadow: 1px 1px 0 #3399ff;
+}
+
+.formulario-inscricao input,
+.formulario-inscricao select {
+  padding: 10px;
+  font-family: 'Audiowide';
+  font-size: 14px;
+  border-radius: 8px;
+  border: 2px solid #00ffff;
+  background-color: #0f1c2e;
+  color: #e0f7ff;
+  box-sizing: border-box;
+}
+
+.formulario-inscricao input:focus,
+.formulario-inscricao select:focus {
+  outline: none;
+  border-color: #7f00ff;
+  background-color: #1a2a44;
+}
+
+.rodape {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 30px 0 10px 0;
+  color: #e0f7ff;
+  font-family: 'Audiowide';
+  margin-top: 50px;
+}
+
+.conteudo-rodape {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.coluna-rodape {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.coluna-rodape h3,
+.coluna-rodape h4 {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.coluna-rodape p,
+.coluna-rodape ul li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.coluna-rodape ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coluna-rodape ul li a {
+  text-decoration: none;
+  color: #e0f7ff;
+  transition: color 0.3s ease;
+}
+
+.coluna-rodape ul li a:hover {
+  color: #7f00ff;
+}
+
+.creditos {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  border-top: 1px solid #00ffff33;
+  padding-top: 10px;
+}
