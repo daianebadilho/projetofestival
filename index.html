@@ -1,159 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Festival Popland - Programação e Ingressos</title>
-  <link rel="stylesheet" href="estilos_atualizado.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
-    rel="stylesheet"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANET FESTIVAL</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="titulofestival">
-      <h1>Popland Festival</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#lineup">Lineup</a></li>
-        <li><a href="#ingressos">Ingressos</a></li>
-        <li><a href="#mapa">Mapa do Evento</a></li>
-        <li><a href="#noticias">Notícias</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <div class="titulofestival">
+    <h1>PLANETPOP</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="page/sobre.html">Sobre Nós</a></li>
+      <li><a href="page/lineup.html">Lineup</a></li>
+      <li><a href="page/ingressos.html">Ingressos</a></li>
+      <li><a href="page/inscricao.html">Inscreva-se</a></li>
+    </ul>
+  </nav>    
+</header>  
 
-  <main style="padding-top: 80px;">
-    <section id="slideshow-container">
-      <div id="slides">
-        <div class="slide">
-          <img src="slide1.jpg" alt="Show principal 1" />
-          <p class="texto-slide">Venha curtir os melhores shows!</p>
-        </div>
-        <div class="slide">
-          <img src="slide2.jpg" alt="Show principal 2" />
-          <p class="texto-slide">Experiência única e inesquecível!</p>
-        </div>
-        <div class="slide">
-          <img src="slide3.jpg" alt="Show principal 3" />
-          <p class="texto-slide">Ingressos já disponíveis!</p>
-        </div>
+<main>
+  <div id="slideshow-container">
+    <div id="slides">
+      <div class="slide"><img src="img/lg1.png" alt="Lady Gaga">
+        <div class="texto-slide">Lady Gaga</div>
       </div>
-    </section>
+      <div class="slide"><img src="img/be1.png" alt="Billie Eilish">
+        <div class="texto-slide">Billie Eilish</div>
+      </div>  
+      <div class="slide"><img src="img/b1.png" alt="BEYONCÉ">
+        <div class="texto-slide">Beyoncé</div>
+      </div>
+      <div class="slide"><img src="img/tw1.png" alt="The weeknd">
+        <div class="texto-slide">The Weeknd</div>
+      </div>   
+    </div>
+  </div>
 
-    <div class="layout-completo">
-      <aside class="barra-lateral">
-        <h2 class="titulo-aside">Parceiros Oficiais</h2>
-        <img
-          class="imagem-parceiro"
-          src="parceiro1.png"
-          alt="Logo do Parceiro 1"
-        />
-        <img
-          class="imagem-parceiro"
-          src="parceiro2.png"
-          alt="Logo do Parceiro 2"
-        />
-      </aside>
+  <div class="area-centralizada">
+    <aside class="aside-patrocinador">
+      <h2 class="titulo-patrocinador">PATROCINADORES</h2>
+      <div class="espaco-imagens">
+        <!-- <img src="img/patrocinador1.png" alt="Patrocinador 1"> -->
+      </div>
+    </aside>
 
-      <article class="conteudo-principal">
-        <section id="lineup" class="fundolineup">
-          <h2 class="tituloscorpodotexto">Lineup</h2>
-          <p class="headliners">
-            Lana Del Rey, SZA, H.E.R, Kim Petras, Taga e McRae, Doja Cat, Anitta,
-            Luísa Sonza, Marina Sena
-          </p>
-          <p class="outrosartistas">
-            Diversos artistas nacionais e internacionais completam a festa
-          </p>
-        </section>
-
-        <section id="ingressos" class="fundoingressos">
-          <h2 class="tituloscorpodotexto">Ingressos</h2>
+    <div class="fundoindex">
+      <div class="corpodotexto">
+        <div class="datas">
+          <h1 class="tituloscorpodotexto">DATAS</h1>  
+          <p>SÃO PAULO - BR</p>
+          <p>08 e 09 de Agosto de 2026</p>
+        </div>
+        <div class="quadrolineup">
+          <h1 class="tituloscorpodotexto">HEADLINERS</h1>
+          <p>LADY GAGA</p>
+          <p>BILLIE EILISH</p>
+          <p>BEYONCÉ</p> 
+          <p>THE WEEKND</p>
           <div class="containerbotao">
-            <a href="#" class="botaocompreseuingresso"
-              >Compre seu ingresso</a
-            >
-          </div>
-          <div class="seletor-ingressos">
-            <label for="tipo-ingresso">Selecione o tipo de ingresso:</label>
-            <select id="tipo-ingresso" name="tipo-ingresso">
-              <option value="inteira">Inteira</option>
-              <option value="meia">Meia-entrada</option>
-            </select>
-          </div>
-          <div class="forma-pagamento">
-            <label for="pagamento">Forma de pagamento:</label>
-            <select id="pagamento" name="pagamento">
-              <option value="cartao">Cartão de Crédito</option>
-              <option value="boleto">Boleto Bancário</option>
-              <option value="pix">PIX</option>
-            </select>
-          </div>
-        </section>
-
-        <section id="mapa" class="fundomapa">
-          <h2 class="tituloscorpodotexto">Mapa do Evento</h2>
-          <div class="mapa-evento">
-            <div class="palco palco1">Palco 1</div>
-            <div class="palco palco2">Palco 2</div>
-            <div class="pista-premium">Pista Premium</div>
-            <div class="pista">Pista</div>
-          </div>
-        </section>
-
-        <section id="noticias" class="fundonoticias">
-          <h2 class="tituloscorpodotexto">Notícias</h2>
-          <p>
-            Acompanhe as últimas novidades do Popland Festival e fique por dentro
-            de todas as atrações.
-          </p>
-        </section>
-
-        <section id="sobre" class="fundosobre">
-          <h2 class="tituloscorpodotexto">Sobre o Festival</h2>
-          <p>
-            O Popland Festival é um dos maiores eventos de música pop do Brasil,
-            reunindo artistas nacionais e internacionais em uma experiência
-            única.
-          </p>
-        </section>
-      </article>
-    </div>
-  </main>
-
-  <footer class="rodape">
-    <div class="conteudo-rodape">
-      <div class="coluna-rodape">
-        <h3>Contato</h3>
-        <p>Email: contato@poplandfestival.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-      </div>
-      <div class="coluna-rodape">
-        <h3>Redes Sociais</h3>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-      <div class="coluna-rodape">
-        <h3>Informações</h3>
-        <ul>
-          <li><a href="#lineup">Lineup</a></li>
-          <li><a href="#ingressos">Ingressos</a></li>
-          <li><a href="#mapa">Mapa</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-        </ul>
+            <a href="../page/compreseuingresso.html" class="botaocompreseuingresso">Compre Já!</a>
+          </div> 
+        </div>
+        <div class="ingressos">
+          <h1 class="tituloscorpodotexto">INGRESSOS</h1>
+          <p>Pista Premium <span class="sold-out">Sold Out</span></p>
+          <p>Pista - Últimos ingressos disponíveis!</p>
+        </div>
       </div>
     </div>
-    <div class="creditos">
-      © 2025 Popland Festival - Todos os direitos reservados
+
+    <aside class="aside-patrocinador">
+      <h2 class="titulo-patrocinador">PATROCINADORES</h2>
+      <div class="espaco-imagens">
+        <!-- <img src="img/patrocinador2.png" alt="Patrocinador 2"> -->
+      </div>
+    </aside>
+  </div>
+
+  <div class="fundonoticias">
+    <div class="noticias">
+      <h1 class="tituloscorpodotexto">Notícias</h1>
+      <h2>Lady Gaga reúne 2,1 milhões de pessoas em show histórico em Copacabana, diz Riotur.</h2>
+      <div class="video">
+        <div class="video1">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/L9wkn7-TWbo?si=lminHAGps-f665B_" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <br>
+        <h2>Grammy 2025: Beyoncé vence Álbum do Ano pela 1ª vez.</h2>
+        <div class="video2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uEyGYjlzbA0?si=W5Dcl6-ZRhYq5ruW" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="conteudo-rodape">
+    <div class="coluna-rodape">
+      <h3>PLANETPOP</h3>
+      <p>O universo do Pop em um só lugar.</p>
+    </div>
+    <div class="coluna-rodape">
+      <h4>Redes Sociais</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="coluna-rodape">
+      <h4>Contato</h4>
+      <p>Email: contato@planetpop.com</p>
+      <p>Tel: (11) 99999-9999</p>
+    </div>
+  </div>
+  <div class="creditos">
+    <p>&copy; 2025 PLANETPOP. Todos os direitos reservados.</p>
+  </div>
+</footer>
 </body>
 </html>
