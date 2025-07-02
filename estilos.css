@@ -9,21 +9,26 @@ scroll-behavior: smooth;
 
 main {
 padding-top: 10px;  
+margin-right: 40px; 
 }
 
 }
 
 header {
-display: flex;
-align-items: center;
-padding: 20px 40px;
-height: 5px;
-overflow: hidden;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-z-index: 1000; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #0f1c2e;
 }
 
 
@@ -711,20 +716,24 @@ background-color:  rgba(0, 0, 0, 0.35);
   gap: 20px;
   box-sizing: border-box;
 }
-
 .barra-lateral {
-  width: 250px;
+  width: 350px; /* maior largura */
   background-color: rgba(0, 0, 0, 0.35);
-  padding: 20px 10px;
+  padding: 30px 20px;
   color: #e0f7ff;
   font-family: 'Audiowide';
   text-align: center;
-  border-radius: 3px;
+  border-radius: 10px;
   box-sizing: border-box;
-  position: sticky;
-  top: 400px;
-  height: fit-content;
+
+  /* Espaços para não encostar */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px; /* Afastar da lateral esquerda da página */
 }
+
+
+
 
 .titulo-patrocinador {
   font-size: 14px;
@@ -747,7 +756,6 @@ background-color:  rgba(0, 0, 0, 0.35);
   height: auto;
   border-radius: 6px;
 }
-
 .conteudo-central {
   flex: 1;
   display: flex;
