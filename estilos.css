@@ -180,6 +180,47 @@ nav ul li a:hover {
   100% { transform: translateX(0%); }
 }
 
+.layout-completo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.barra-lateral {
+  width: 120px;
+  background-color: #0f1c2e;
+  padding: 10px;
+  text-align: center;
+}
+
+.barra-lateral img.imagem-parceiro {
+  width: 100%;
+  height: auto;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.5);
+}
+
+.conteudo-principal {
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .layout-completo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barra-lateral {
+    display: none;
+  }
+}
+
 .fraseefeito {
   text-align: center;
   color: #e0f7ff;
