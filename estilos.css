@@ -756,3 +756,75 @@ background-color:  rgba(0, 0, 0, 0.35);
   box-sizing: border-box;
 }
 
+.fundo-faleconosco {
+  width: 90%;
+  max-width: 800px;
+  margin: 150px auto 50px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  font-family: 'Audiowide', cursive;
+  color: #e0f7ff;
+}
+
+.fundo-faleconosco h1 {
+  text-align: center;
+  color: #00ffff;
+  text-shadow: 1px 1px 0 #3399ff;
+  font-size: 24px;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.form-faleconosco {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-faleconosco label {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #00ffff;
+  text-shadow: 1px 1px 0 #3399ff;
+  text-transform: uppercase;
+}
+
+.form-faleconosco input,
+.form-faleconosco textarea {
+  padding: 10px;
+  border: 2px solid #00ffff;
+  background-color: #0f1c2e;
+  color: #e0f7ff;
+  border-radius: 8px;
+  font-family: 'Audiowide';
+  font-size: 14px;
+}
+
+.form-faleconosco input:focus,
+.form-faleconosco textarea:focus {
+  outline: none;
+  border-color: #7f00ff;
+  background-color: #1a2a44;
+}
+
+.form-faleconosco button {
+  padding: 12px;
+  background: linear-gradient(90deg, #00ffff, #0077cc);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-faleconosco button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.4);
+}
